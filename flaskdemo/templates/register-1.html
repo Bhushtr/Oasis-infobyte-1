@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>login and Registration page From in Html and css</title>
+    <link rel="stylesheet" href="/static/style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <span class="bg-animation"></span>
+      <div class="form-box login">
+        <h2>Login</h2>
+        <form action="/register" method="post" action="">
+          <div class="input-box">
+            <input id="name" name="name" id="name"type="text" placeholder="Enter Your Username" required/>
+            <label for="">Username</label>
+            <i class="bx bxs-user"></i>
+          </div>
+          <div class="input-box">
+            <input id="email" name="email" id="email" type="text" placeholder="Enter Your email" required />
+             <label for="">email</label>
+            <i class="bx bxs-envelope"></i>
+          </div>
+          <div class="input-box">
+            <input id="phone" name="phone" id="phone" type="number" placeholder="Enter Your phone" required />
+            <label for="">phone</label>
+             <i class="bx bxs-phone"></i>
+          </div>
+          <div class="input-box">
+            <input id="password" name="password" id="password" type="password" placeholder="Enter Your password" required />
+            <label for="">password</label>
+            <i class="bx bxs-lock-alt"></i>
+          </div>
+          <button type="submit" class="btn">Login</button>
+          <div class="logreg-link">
+              <p class="bottom">Dont't have an account?  <a class="bottom" href="{{url_for('login')}}"> login</a></p>
+          </div>
+        </form>
+      </div>
+      <div class="info-text login">
+        <h2>Welcome to the HELL</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      </div>
+    </div>
+  </body>
+</html>
